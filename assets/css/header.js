@@ -5,7 +5,14 @@ export default StyleSheet.create({
         flex:1,
         flexDirection: 'row',
         alignItems: 'center',
-        width: '35%',
-        justifyContent: 'space-around',
+        width: '170%',
+        justifyContent: 'center',
+        marginBottom:20,
+        position: 'relative',
+        left: 20,
     },
+    button: {
+        marginLeft: -20
+    }
+
   });

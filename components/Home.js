@@ -65,11 +65,11 @@ export default class Home extends React.Component {
               <Text style={styles.blankText}>A proximité</Text>
             </Button>
             <Button vertical>
-              <Icon path={mdiPlusCircle} size={1} color="#fff"/>
+              
               <Text style={styles.blankText}>Ajouter</Text>
             </Button>
             <Button vertical active>
-              <Icon path={mdiMessageProcessingOutline} size={1} color="#fff"/>
+              
               <Text style={styles.blankText}>Messages</Text>
             </Button>
           </FooterTab>

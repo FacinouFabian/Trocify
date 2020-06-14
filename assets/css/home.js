@@ -11,16 +11,15 @@ export default StyleSheet.create({
     boxList:{  
         flex: 1,
         flexDirection: 'row',
-        width: '50%',
+        width: '100%',
         alignItems: 'center',
-        justifyContent: 'space-around',
         backgroundColor: '#D3D3D3',  
     },  
     box:{
         flex: 1,
-        margin: 5,
+        margin: 20,
         backgroundColor: '#fff',
-        height: '40%',
+        height: '25%',
         borderWidth: 2,
         borderBottomLeftRadius: 50,
         borderBottomRightRadius: 50,
@@ -63,18 +62,5 @@ export default StyleSheet.create({
     },
     blankText:{
         color: '#fff',
-    },
-    circle: {
-        zIndex: 1,
-        position: 'absolute',
-        top: 10,
-        width: 65,
-        height: 65,
-        borderWidth: 0.5,
-        borderRadius: 100/2,
-        backgroundColor: '#fff',
-        alignSelf: 'center',
-        justifyContent:'center',
-        alignItems: 'center',
     },
   });

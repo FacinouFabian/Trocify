@@ -1,9 +1,7 @@
   
 import React from 'react'
-import { Header } from 'react-native-elements'
-import { TouchableOpacity } from 'react-native'
-import Icon from '@mdi/react'
-import { mdiMapLegend, mdiMagnify, mdiFilter, mdiBellOutline } from '@mdi/js'
+import { Header, Icon } from 'react-native-elements'
+import { TouchableOpacity, Text } from 'react-native'
 import { View } from 'native-base'
 import styles from '../../assets/css/header.js'
 
@@ -17,19 +15,53 @@ export default class MyHeader extends React.Component {
 
     rightContent = 
         <View style={styles.horizontalList}>
-          <Icon path={mdiFilter} size={1} color="#fff"/>
           <TouchableOpacity
             style={styles.button}
             onPress={() => this.navigation.navigate('Search')}
           >
-            <Icon path={mdiMagnify} size={1} color="#fff"/>
+          <Icon
+            reverse
+            name='ios-funnel'
+            type='ionicon'
+            color='rgb(63, 81, 181)'
+            size={25}
+          />
           </TouchableOpacity>
-          <Icon path={mdiMapLegend} size={1} color="#fff"/>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => this.navigation.navigate('Search')}
+          >
+          <Icon
+            reverse
+            name='ios-search'
+            type='ionicon'
+            color='rgb(63, 81, 181)'
+            size={25}
+          />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => this.navigation.navigate('Search')}
+          >
+          <Icon
+            reverse
+            name='ios-map'
+            type='ionicon'
+            color='rgb(63, 81, 181)'
+            size={25}
+          />
+          </TouchableOpacity>
         </View>
 
     leftContent = 
-        <View>
-          <Icon path={mdiBellOutline} size={1} color="#fff"/>
+        <View style={{marginBottom:20}}>
+          <Icon
+            reverse
+            name='ios-notifications-outline'
+            type='ionicon'
+            color='rgb(63, 81, 181)'
+            size={25}
+          />
         </View>
 
     ProfileHeader = 
